@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Check Image Spoofed or Not Spoofed</h1>
+    {% if image_data %}
+    <img src="data:image/png;base64,{{image_data}}" alt="Captured Frame">
+    {% endif %}
+    <h3>{{image_info}}
+</body>
+</html>

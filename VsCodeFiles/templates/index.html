@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Flask Page</title>
+</head>
+
+<body>
+    <h3>SPOOFING DETECTION</h3>
+    <img id="video-stream" src="{{ url_for('video_feed') }}" width="640" height="480">
+    <button id="capture-button">Capture</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
